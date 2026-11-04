@@ -18,12 +18,6 @@ query homepage {
       section2 {
         description
         heading
-        image {
-          node {
-            altText
-            sourceUrl
-          }
-        }
         button {
           url
           title
@@ -84,5 +78,6 @@ query homepage {
       }
     }
   }
+
 }
 `;

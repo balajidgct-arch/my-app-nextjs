@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 type Button = {
   url:string;
   title:string;
@@ -7,6 +11,9 @@ type Button = {
 
 
 export default function ContactCTA({button,title,description}:{button?:Button,title?:string,description?:string}) {
+
+
+
   return (
     <section id="contact" className="bg-indigo-600 py-16">
       <div className="max-w-6xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -28,7 +35,10 @@ export default function ContactCTA({button,title,description}:{button?:Button,ti
         >
           {button?.title}
         </a>
+
+
       </div>
+      
     </section>
   );
 }
